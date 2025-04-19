@@ -11,7 +11,7 @@ def get_todo():
 st.title('To-Do App',)
 st.subheader('This app is to increase your productivity')
 
-st.text_input(label="Enter To Dos", placeholder="Add a new To Do",
+st.text_input(label="Enter To Do Items: ", placeholder="Add a new To Do",
                       on_change=get_todo, key="new_item")
 
 for index, todo in enumerate(todos):
